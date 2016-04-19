@@ -1,31 +1,21 @@
-<?php # Script 16.3 - config.inc.php
-/* This script:
- * - define constants and settings
- * - dictates how errors are handled
- * - defines useful functions
- */
- 
-// Document who created this site, when, why, etc.
-
-
-// ********************************** //
+<?php 
 // ************ SETTINGS ************ //
 
 // Flag variable for site status:
 define('LIVE', TRUE);
 
 // Admin contact address:
-define('EMAIL', 'simran1315@gmail.com');
+define('EMAIL', 'simran.kaur@lazada.com');
 
 // Site URL (base for all redirections):
 define ('BASE_URL', '');
-define ('BASE_URL1', 'localhost/ch16/');//for activation code
+define ('BASE_URL1', '/seller/');//for activation code
 
 // Location of the MySQL connection script:
-define ('MYSQL','/ch16/mysqli_connect.php');
+define ('MYSQL','/seller/mysqli_connect.php');
 
 // Adjust the time zone for PHP 5.1 and greater:
-date_default_timezone_set ('US/Eastern');
+date_default_timezone_set ('Asia/Hong_Kong');
 
 // ************ SETTINGS ************ //
 // ********************************** //
@@ -63,8 +53,6 @@ function my_error_handler ($e_number, $e_message, $e_file, $e_line, $e_vars) {
 
 } // End of my_error_handler() definition.
 
-// Use my error handler.
-set_error_handler ('my_error_handler');
 
 // ************ ERROR MANAGEMENT ************ //
 // ****************************************** //

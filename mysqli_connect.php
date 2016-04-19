@@ -14,8 +14,8 @@ DEFINE ('DB_NAME', 'ssu');
 $dbc = @mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 mysqli_set_charset($dbc,"utf8");
 if (!$dbc) {
-	echo "here";
-	header("Location: http://localhost/error.php");
+	$dbcerror=1;
+	//header("Location: /ssu/");
 	exit;
 }
 

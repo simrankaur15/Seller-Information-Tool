@@ -35,10 +35,12 @@ $(document).ready(function(){
 	 
     $("#color_change").click(function(){
 		var email=this.className+"=1";
-        $.ajax({url: "email.php?",data: email, success: function(result){
-         $( "#conf_dialog" ).css("visibility", "visible");
+		
+        $.ajax({url: "/ssu/email.php?",data: email, success: function(result){
+			
+		$( "#conf_dialog" ).css("visibility", "visible");
       $( "#conf_dialog" ).dialog( "open" );
-	// alert (result);
+	 alert (result);
        } });
     });
 });
@@ -73,53 +75,6 @@ $(function() {
       $( "#conf_dialog" ).dialog( "close" );
     });
 	
-	
-	
-	
-	//////////////////forget password mail function
-
-//mail function
-$(document).ready(function(){
-	 
-    $("#forget_password").click(function(){
-		var email_id="Hi";
-        $.ajax({url: "forget_password.php?",data: email, success: function(result){
-         $( "#forget_password_conf_dialog" ).css("visibility", "visible");
-      $( "#forget_password_conf_dialog" ).dialog( "open" );
-		alert (result);
-       } });
-    });
-});
-
-
-$(function() {
-    $( "#forget_password_conf_dialog" ).dialog({
-		modal: true,
-	dialogClass: "no-close",		
-      autoOpen: false,
-      show: {
-        duration: 700
-      },
-      hide: {
-        
-        duration: 500
-      },
-	  width: "auto",
-  
-  create: function( event, ui ) {
-    // Set maxWidth
-    $(this).css("maxWidth", "100%");
-  },
-  create: function (event, ui) {
-        $(".ui-widget-header").hide();
-    },
-    });
-});	
-	
- 
-	$( "#forget_password_conf_close" ).click(function() {
-      $( "#forget_password_conf_dialog" ).dialog( "close" );
-    });
 	
 	
 	

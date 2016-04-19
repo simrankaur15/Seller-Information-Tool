@@ -1,13 +1,10 @@
-
 a:focus {outline:none;
 }
-
 .container {
     max-width: 100%;
     margin-left: 30px;
     margin-right: 20px;
 }
-
 .row-block {
     padding-left: 3em;
 }
@@ -119,8 +116,6 @@ line-height:26px;}
    height : 25px;
    
 }
-
-
 a:-webkit-any-link {
 
     text-decoration: none;
@@ -135,4 +130,10 @@ a:hover {
     color: #F57224;
 }
 a{color: #199cb7; }
+
+#popup_space{
+	margin-bottom:18px;
+}
+
+
 
