@@ -1,0 +1,30 @@
+<div class="page" style="height:353px; width:353px;">
+<table border="1" cellpadding="0" cellspacing="0" style="width:100%">
+	<tbody>
+		<tr style="height: 78px;">
+			<td style="text-align:center; width:100px; font-size: 10px;">Order No:<br />
+			{{ order_nr }}</td>
+			<td style="text-align: center; font-size: 10px;"><strong>EMS Tracking No:</strong><br />
+			{{{ barcode }}}</td>
+			<td style="text-align: center; font-size: 10px;">TH3</td>
+		</tr>
+		<tr>
+			<td colspan="3" style="text-align: center; font-size: 10px;">Package No:<br />
+			{{{ package_number_barcodes }}}</td>
+		</tr>
+		<tr style="height: 150px;">
+			<td style="font-size: 10px; vertical-align: top; padding: 5px;">ชื่อบริษัท : {{ seller_name }}<br />
+			<strong>กรณีนำจ่ายไม่ได้กรุณาส่งคืน ศป. EMS 10020 (บางพลี)</strong>
+			<p style="text-align:center;"><img alt="image" src="http://srv-live.lazada.co.th/cms/OMS/Logo-PNG.png" style="width:90px" /><br />
+			Cross-Border Item</p>
+			</td>
+			<td colspan="2" style="font-size: 16px; font-weight:bold; vertical-align: top; padding: 5px 5px 0 5px;">ผู้รับ: {{{ shipping_address_customer_name }}}<br />
+			ที่อยู่ผู้รับ:{{{ shipping_address }}}</td>
+		</tr>
+		<tr style="height: 20px;">
+			<td style="font-size: 12px; font-weight:bold; color: black; text-align: center;">ไม่เก็บเงินค่าสินค้า</td>
+			<td colspan="2" style="font-size: 16px; font-weight:bold; color: black; text-align: center;">{{{ shipping_address_zipcode }}}</td>
+		</tr>
+	</tbody>
+</table>
+</div>

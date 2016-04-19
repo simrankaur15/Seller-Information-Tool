@@ -1,0 +1,57 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Effects - Animate demo</title>
+
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <style>
+    
+    #button { padding: .5em 1em; text-decoration: none; }
+    #effect { width: 240px; height: 135px; }
+    #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+  </style>
+  <style> 
+i {
+-moz-animation-iteration-count: infinite;
+-webkit-animation-iteration-count: infinite;
+-o-animation-iteration-count: infinite;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    from {color: red;}
+    to {color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {color: red;}
+    to {color: yellow;}
+}
+</style>
+</head>
+<body>
+ <br><br>
+<div class="toggler">
+  <span id="effect" >
+    <i class="fa fa-chevron-left" style="font-size: 35px; "></i></span>
+	<span id="effect1" >
+	<i class="fa fa-chevron-left" style="font-size: 35px;margin-left:-15px;"></i></span>
+	<span id="effect2" >
+<i class="fa fa-chevron-left" style="font-size: 35px;margin-left:-15px;"></i></span>
+    
+  </div>
+
+
+ 
+ 
+</body>
+</html>
